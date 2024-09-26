@@ -19,7 +19,7 @@ def unpack_tuple(t):
     return a, b, c, d
 
 def main():
-    t = (1, 2, 3, 4)
+    t = (1, 2, 3, 4)  
     a, b, c, d = unpack_tuple(t)
     print(f"Unpacked Values: a={a}, b={b}, c={c}, d={d}")
 
