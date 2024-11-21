@@ -17,7 +17,8 @@ def add_ing(s):
     """
     if len(s) < 3:
         return s
-    if s.endswith("ing"):
+    if s[-3:]=="ing":
+        print(s[-3:])
         return s + "ly"
     return s + "ing"
 
