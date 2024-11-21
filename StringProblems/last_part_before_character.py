@@ -16,12 +16,16 @@ def last_part_before_character(s, char):
     Return:
         str : substring before the specified character
     """
-    return s.rsplit(char, 1)[0]
+    return s.rsplit(",",2)
 
 def main():
-    sample_string = "https://www.w3resource.com/python-exercises"
-    last_part = last_part_before_character(sample_string, "/")
-    print(f"Last part before '/': {last_part}")
+    sample_string = "a,b,c,d,e"
+    # last_part = last_part_before_character(sample_string, "/")
+    # print(f"Last part before '/': {last_part}")
+    
+    my_set =set([2,3])
+    print(my_set.remove(2))
+    print(my_set)
 
 if __name__ == "__main__":
     main()
